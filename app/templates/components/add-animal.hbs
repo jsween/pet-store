@@ -1,1 +1,39 @@
-{{yield}}
+<form>
+  <div class="input-field">
+    <label for="breed">Breed</label>
+    {{input value=breed}}
+  </div>
+  <div class="input-field">
+    <label for="species">Species</label>
+    {{input value=species}}
+  </div>
+  <div class="input-field">
+    <label for="gender">Gender</label>
+    {{input value=gender}}
+  </div>
+  <div class="input-field">
+    <label for="age">Age</label>
+    {{input value=age}}
+  </div>
+  <div class="input-field">
+    <label for="size">Size</label>
+    {{input value=size}}
+  </div>
+  <div class="input-field">
+    <label for="health">Health</label>
+    {{input value=health}}
+  </div>
+  <div class="input-field">
+    <label for="temperment">Temperment</label>
+    {{input value=temperment}}
+  </div>
+  <div class="input-field">
+    <label for="price">Price</label>
+    {{input value=price}}
+  </div>
+  <div class="input-field">
+    <label for="image">Image URL</label>
+    {{input value=image}}
+  </div>
+  <button {{action 'saveAnimal'}}>Add Animal</button>
+</form>
