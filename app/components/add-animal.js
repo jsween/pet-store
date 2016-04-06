@@ -16,6 +16,17 @@ export default Ember.Component.extend({
         image: this.get('image') ? this.get('image') : 'http://thewatchfullepisodes.com/wp-content/uploads/2016/03/no-image.png'
       };
       this.sendAction('saveAnimalToStore', params);
+      this.set('name', "");
+      this.set('breed', "");
+      this.set('species', "");
+      this.set('gender', "");
+      this.set('age', "");
+      this.set('size', "");
+      this.set('health', "");
+      this.set('temperment', "");
+      this.set('price', "");
+      this.set('image', "");
+
     }
 
   }

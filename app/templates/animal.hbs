@@ -1,17 +1,19 @@
 <br>
-<div class="row">
-  <div class="col-sm-6">
-    <h1>{{model.name}}</h1>
-    <h5>Breed: {{model.breed}}</h5>
-    <h5>Gender: {{model.gender}}</h5>
-    <h5>Age: {{model.age}}</h5>
-    <p>Size: {{model.size}}</p>
-    <p>Health: {{model.health}}</p>
-    <p>Temperment: {{model.temperment}}</p>
-    <p>Adoption Price: {{model.price}}</p>
-  </div>
+<div class="animal_display">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1 class="page-header">{{model.name}}</h1>
+      <h5>Breed: {{model.breed}}</h5>
+      <h5>Gender: {{model.gender}}</h5>
+      <h5>Age: {{model.age}}</h5>
+      <p>Size: {{model.size}}</p>
+      <p>Health: {{model.health}}</p>
+      <p>Temperment: {{model.temperment}}</p>
+      <p>Adoption Price: {{model.price}}</p>
+    </div>
 
-  <div class="col-sm-6">
-    <img src="{{model.image}}" alt="{{model.breed}}, {{model.gender}}" />
+    <div class="col-sm-6">
+      <img class=""src="{{model.image}}" alt="{{model.breed}}, {{model.gender}}" />
+    </div>
   </div>
 </div>
