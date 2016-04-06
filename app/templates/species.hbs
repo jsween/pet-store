@@ -1,7 +1,16 @@
 {{#each model as |animal|}}
-    <p>
-      {{animal.breed}}, 
-      {{animal.gender}}
-    </p>
-    <img src="{{animal.image}}" alt="{{animal.species}}" />
+<div class="animal_display">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>{{animal.breed}}</h2>
+      <h5>Age: {{animal.age}}</h5>
+      <h5>{{animal.gender}}</h5>
+    </div>
+    <div class="col-sm-8">
+      <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
+    </div>
+  </div>
+  <p>
+  </p>
+</div>
 {{/each}}
