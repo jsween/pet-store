@@ -1,8 +1,12 @@
-{{#if model}}
-  {{#each model as |animal|}}
-  {{#link-to 'animal' animal.id }}{{animal-tile animal=animal}}{{/link-to}}
-  {{/each}}
-{{else}}
-  <h3>Sorry, but the animals in this category have already been adopted.</h3>
-  <img src="http://i245.photobucket.com/albums/gg62/witchyhoy3/AAA/animals-001.jpg" alt="happy puppy" />
-{{/if}}
+<div class="row">
+  <div class="col-sm-9 col-sm-offset-3">
+    {{#if model}}
+      {{#each model as |animal|}}
+      {{#link-to 'animal' animal.id }}{{animal-tile animal=animal}}{{/link-to}}
+      {{/each}}
+    {{else}}
+      <h3>Sorry, but the animals in this category have already been adopted.</h3>
+      <img src="http://i245.photobucket.com/albums/gg62/witchyhoy3/AAA/animals-001.jpg" alt="happy puppy" />
+    {{/if}}
+  </div>
+</div>
