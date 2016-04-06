@@ -6,7 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('species');
+  // this.route('species');
+  this.route('species', { path: '/species/:animal_species'});
   this.route('admin');
 });
 

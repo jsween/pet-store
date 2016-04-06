@@ -1,1 +1,7 @@
-{{outlet}}
+{{#each model as |animal|}}
+    <p>
+      {{animal.breed}}, 
+      {{animal.gender}}
+    </p>
+    <img src="{{animal.image}}" alt="{{animal.species}}" />
+{{/each}}

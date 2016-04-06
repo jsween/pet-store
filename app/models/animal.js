@@ -1,6 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
+  name: DS.attr(),
   breed: DS.attr(),
   species: DS.attr(),
   gender: DS.attr(),
