@@ -1,37 +1,47 @@
 <form>
-  <div class="input-field">
+  <div class="form-group">
     <label for="breed">Breed</label>
-    {{input value=breed}}
+    {{#x-select value=breed}}
+      {{#x-option value="dog"}}Dog{{/x-option}}
+      {{#x-option value="cat"}}Cat{{/x-option}}
+    {{/x-select}}
   </div>
-  <div class="input-field">
+  <div class="select form-group">
     <label for="species">Species</label>
     {{input value=species}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="gender">Gender</label>
-    {{input value=gender}}
+    {{#x-select value=gender}}
+      {{#x-option value="male"}}Male{{/x-option}}
+      {{#x-option value="female"}}Female{{/x-option}}
+    {{/x-select}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="age">Age</label>
-    {{input value=age}}
+    {{input type="number" value=age}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="size">Size</label>
-    {{input value=size}}
+    {{#x-select value=size}}
+      {{#x-option value="small"}}Small{{/x-option}}
+      {{#x-option value="medium"}}Medium{{/x-option}}
+      {{#x-option value="large"}}Large{{/x-option}}
+    {{/x-select}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="health">Health</label>
     {{input value=health}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="temperment">Temperment</label>
     {{input value=temperment}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="price">Price</label>
-    {{input value=price}}
+    {{input type="number" value=price}}
   </div>
-  <div class="input-field">
+  <div class="form-group">
     <label for="image">Image URL</label>
     {{input value=image}}
   </div>
