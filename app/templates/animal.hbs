@@ -13,6 +13,7 @@
         <p>Adoption Price: {{model.price}}</p>
       </div>
       <div class="smuggle">
+        {{log model.breed}}
         {{#if model.inCrate }}
           <button class="btn btn-danger">Throw Back Critter</button>
         {{else}}

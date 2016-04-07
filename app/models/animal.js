@@ -13,7 +13,7 @@ export default DS.Model.extend({
   image: DS.attr(),
 
   shoppingCrate: Ember.inject.service(),
-  inCart: Ember.computed('inCart.animals.[]', function() {
-    return this.get('inCart').includes(this)
+  inCrate: Ember.computed('shoppingCrate.animals.[]', function() {
+    return this.get('shoppingCrate').includes(this)
   })
 });
