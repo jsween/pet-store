@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  crate: [],
+  animals: [],
 
   add(animal) {
-    this.get('crate').pushObject(animal);
+    this.get('animals').pushObject(animal);
   }
 });

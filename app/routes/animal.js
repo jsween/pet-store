@@ -10,6 +10,7 @@ export default Ember.Route.extend({
     addToCrate(animal) {
       console.log(animal);
       this.get('shoppingCrate').add(animal);
+      debugger;
     }
   }
 });
