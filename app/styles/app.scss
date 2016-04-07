@@ -2,6 +2,10 @@
   font-family: 'Bitter', serif;
 }
 
+#shopping-crate img {
+  max-height: 50px;
+}
+
 .jumbotron {
   font-family: 'Merriweather', serif;
 }
@@ -24,4 +28,8 @@
 
 .jumbotron {
   background-image: "http://delcospca.org/wp-content/uploads/2014/02/howtoadopt.jpg";
+}
+
+.float-right {
+  float: right;
 }
