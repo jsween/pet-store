@@ -1,9 +1,7 @@
 <div class="page-header">
   <h2>Shopping Crate</h2>
 </div>
-
-
-{{display-crate }}
-
-{{checkout-tile}}
-{{log shoppingCrate}}
+<h3>All Animals:</h3>
+{{#each shoppingCrate as |animal|}}
+  {{checkout-tile animal=animal}}
+{{/each}}

@@ -8,9 +8,10 @@ export default Ember.Route.extend({
   },
   actions: {
     addToCrate(animal) {
-      console.log(animal);
       this.get('shoppingCrate').add(animal);
-      // debugger;
     }
-  }
+  },
+  inCrate: Ember.computed('shoppingCrate.animals.[]', function() {
+    return this.get('shoppingCrate').includes(this.model);
+  })
 });

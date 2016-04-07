@@ -10,5 +10,10 @@ export default DS.Model.extend({
   health: DS.attr(),
   temperment: DS.attr(),
   price: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+
+  shoppingCrate: Ember.inject.service(),
+  inCart: Ember.computed('inCart.animals.[]', function() {
+    return this.get('inCart').includes(this)
+  })
 });

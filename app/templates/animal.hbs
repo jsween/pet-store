@@ -13,7 +13,11 @@
         <p>Adoption Price: {{model.price}}</p>
       </div>
       <div class="smuggle">
-        <button class="btn btn-success"{{action 'addToCrate' model}}>Add to Crate</button>
+        {{#if model.inCrate }}
+          <button class="btn btn-danger">Throw Back Critter</button>
+        {{else}}
+          <button class="btn btn-success"{{action 'addToCrate' model}}>Add to Crate</button>
+        {{/if}}
       </div>
     </div>
 
