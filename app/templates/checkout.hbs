@@ -8,7 +8,7 @@
     {{/each}}
   </div>
   {{#if model}}
-    <button class="btn btn-lg btn-success" >Checkout</button>
+    <button class="btn btn-lg btn-success" {{action 'checkout' model}}>Checkout</button>
   {{/if}}
   <div class="col-sm-6">
 

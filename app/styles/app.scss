@@ -2,11 +2,25 @@
   font-family: 'Bitter', serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+#logo:hover {
+  text-shadow: 2px 2px 2px #bbb;
+}
+
 #shopping-crate {
   padding: 5px;
 
   img {
     max-height: 30px;
+    margin-right: 10px;
   }
 
   #shopping-crate-tag {

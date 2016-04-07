@@ -10,5 +10,9 @@ export default Ember.Service.extend({
   },
   includes(animal) {
     return this.get('animals').includes(animal);
+  },
+  checkout(animal) {
+    this.remove(animal);
+    animal.destroyRecord();
   }
 });
