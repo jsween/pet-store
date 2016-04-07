@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('species', { path: '/species/:animal_species'});
   this.route('admin');
   this.route('animal', { path: '/animal/:animal_id'});
+  this.route('checkout');
 });
 
 export default Router;

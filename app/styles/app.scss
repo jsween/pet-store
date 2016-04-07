@@ -2,8 +2,22 @@
   font-family: 'Bitter', serif;
 }
 
-#shopping-crate img {
-  max-height: 50px;
+#shopping-crate {
+  padding: 5px;
+
+  img {
+    max-height: 30px;
+  }
+
+  #shopping-crate-tag {
+    padding: 10px 10px 0 0;
+    font-size: 1.2em;
+  }
+}
+
+#shopping-crate button:hover {
+  background-color: #e5eaec;
+  box-shadow: 2px 2px 5px #369;
 }
 
 .jumbotron {
