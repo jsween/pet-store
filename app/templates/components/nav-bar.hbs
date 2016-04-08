@@ -21,6 +21,11 @@
         <li class="inline">{{#link-to 'species' 'monkey'}}Monkeys{{/link-to}}</li>
       </ul>
       <div id="shopping-crate" class="float-right">
+        {{#if users}}
+        <button {{action 'signOut'}}type="button">Sign Out</button>
+        {{else}}
+        {{#link-to 'sign-up'}}Sign Up{{/link-to}}
+        {{/if}}
         <button class="btn">{{#link-to 'checkout'}}<span id="shopping-crate-tag">Crate</span><img src="https://cdn1.iconfinder.com/data/icons/pet/500/bag-512.png" alt="shopping crate" /><span>{{displayNumInCart}}</span>{{/link-to}}</button>
       </div>
     </div><!-- /.navbar-collapse -->

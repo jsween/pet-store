@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('admin');
   this.route('animal', { path: '/animal/:animal_id'});
   this.route('checkout');
+  this.route('sign-up');
 });
 
 export default Router;
