@@ -10,12 +10,10 @@ export default Ember.Service.extend({
 
   signIn() {
       this.set('signedIn', true);
-      console.log(this.signedIn);
   },
 
   signOut() {
       this.set('users', []);
       this.set('signedIn', false);
-      // console.log(this.signedIn);
   }
 });
