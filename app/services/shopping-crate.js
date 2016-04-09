@@ -14,5 +14,8 @@ export default Ember.Service.extend({
   checkout(animal) {
     this.remove(animal);
     animal.destroyRecord();
+  },
+  signOut() {
+      this.set('animals', []);
   }
 });

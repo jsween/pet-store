@@ -12,6 +12,7 @@ export default Ember.Component.extend({
   actions: {
     signOut() {
       this.get('currentUser').signOut();
+      this.get('shoppingCrate').signOut();
       this.set('signedIn', true);
     },
   }
