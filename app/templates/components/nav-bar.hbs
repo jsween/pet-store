@@ -22,7 +22,7 @@
       </ul>
       <div id="shopping-crate" class="float-right">
         {{#if users}}
-        <button {{action 'signOut'}}type="button">Sign Out</button>
+        <button class="nav-link" {{action 'signOut'}}type="button">Sign Out</button>
         {{#link-to 'profile'}}Profile{{/link-to}}
         {{else}}
         {{#link-to 'sign-up'}}Sign Up{{/link-to}}
