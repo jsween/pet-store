@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('animal', { path: '/animal/:animal_id'});
   this.route('checkout');
   this.route('sign-up');
+  this.route('log-in');
 });
 
 export default Router;

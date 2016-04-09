@@ -1,13 +1,11 @@
 <form class="">
-  <div class="SignUpForm">
+  <div class="logInForm">
   <form>
-    <label for="name">Name: </label>
-    {{input value=name}}
     <label for="username">Username: </label>
     {{input value=username}}
     <label for="password">Password: </label>
     {{input type="password" value=password}}
-    <button {{action 'saveUser'}}>Save</button>
+    <button {{action 'logIn' users}}>Log In</button>
   </form>
 </div>
 </form>
