@@ -14,6 +14,6 @@ export default DS.Model.extend({
 
   shoppingCrate: Ember.inject.service(),
   inCrate: Ember.computed('shoppingCrate.animals.[]', function() {
-    return this.get('shoppingCrate').includes(this)
+    return this.get('shoppingCrate').includes(this);
   })
 });
