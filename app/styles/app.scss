@@ -1,6 +1,52 @@
-* {
-  font-family: 'Bitter', serif;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+@font-face {
+  font-family: blackjack;
+
+  src: url('blackjack.otf');
+  src: url('blackjack.otf') format('truetype');
+}
+
+@font-face {
+  font-family: blackjack;
+
+  src: url('blackjack.otf');
+  src: url('blackjack.otf') format('truetype');
+}
+
+.admin {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+ input {
+   width: 100%;
+ }
+ select {
+   width: 100%;
+ }
+}
+
+.admin:hover {
+  width: 100%;
+}
+
+// * {
+//   font-family: 'Bitter', serif;
+// }
+
+.container {
+     padding:0;
+     margin:0;
+     width: 100%;
+   }
 
 a:hover {
   text-decoration: none;
@@ -71,4 +117,74 @@ a:hover {
 .nav-link {
     border:none;
     background-color: inherit;
+}
+
+
+
+video {
+  z-index: 1;
+  // border: 2px solid pink;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  // height: 80vh;
+  margin-top: -75px;
+}
+
+.main-title {
+  margin: 0;
+  position: relative;
+  background-color: black;
+  font-family: blackjack;
+  h1 {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 42%;
+    text-align: center;
+    font-size: 100px;
+    color: maroon;
+    text-shadow: 3px 3px 3px black;
+    font-family: blackjack;
+  }
+
+  h5 {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    bottom: 35%;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px white;
+
+  }
+ }
+
+#logo a {
+   color: white !important;
+   text-shadow: 3px 3px 3px black;
+}
+
+.index-container {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.empty {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.navbar-default {
+  a{
+   color: white !important;
+   text-shadow: 2px 2px 2px black;
+  }
+   background-color: transparent;
+   z-index: 2;
+   border-color: transparent;
 }

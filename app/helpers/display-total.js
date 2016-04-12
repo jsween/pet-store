@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export function displayTotal(model) {
+
+
   var animals = model[0];
   var totalPrice = 0;
 
@@ -15,5 +17,7 @@ export function displayTotal(model) {
   });
   return totalPrice;
 }
+
+
 
 export default Ember.Helper.helper(displayTotal);
