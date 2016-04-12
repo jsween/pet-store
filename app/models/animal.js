@@ -9,7 +9,7 @@ export default DS.Model.extend({
   size: DS.attr(),
   health: DS.attr(),
   temperment: DS.attr(),
-  price: DS.attr(),
+  price: DS.attr('number'),
   image: DS.attr(),
 
   shoppingCrate: Ember.inject.service(),
