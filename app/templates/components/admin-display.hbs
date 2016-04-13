@@ -1,14 +1,18 @@
+
 <h2 class="center">Inventory:</h2>
 <hr>
+
+<div class="admin-container">
+
   {{#each animals as |animal|}}
     <!-- <div class="container">
       <div class="row">
         <div class="col-sm-3"> -->
+        <div class="box-it">
           <h2>{{animal.name}}</h2>
           <p>Age: {{animal.age}}</p>
           <p>Breed: {{animal.breed}}</p>
           <p>Size: {{animal.size}}</p>
-          <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
 
       {{#if updateAnimalForm}}
         <div>
@@ -87,7 +91,20 @@
           <button {{action 'updateAnimalForm'}}>Edit Animal</button>
         {{/if}}
 
-          <button {{action 'delete' animal}}>Remove Animal</button>
+
+          <button class= "animal-btn" {{action 'delete' animal}}>Remove Animal</button>
+        <!-- </div> -->
+        <!-- <div class"col-sm-3"> -->
+        <div class="image-admin">
+          <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
+
+        </div>
+        <!-- </div>
+      </div>
+    </div> -->
 
     <hr>
+  </div>
   {{/each}}
+
+</div>
