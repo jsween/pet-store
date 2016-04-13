@@ -34,10 +34,6 @@
  }
 }
 
-// * {
-//   font-family: 'Bitter', serif;
-// }
-
 .container {
      padding:0;
      margin:0;
@@ -83,6 +79,10 @@ a:hover {
 .inline {
   display: inline;
   margin: 0 20px 0 0;
+}
+
+.center {
+  text-align: center;
 }
 
 .single_animal {

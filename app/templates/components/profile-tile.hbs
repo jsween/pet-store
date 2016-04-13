@@ -1,6 +1,10 @@
-<h1>Profile Page</h1>
-{{#each currentUser.users as |user|}}
-  Name: {{user.name}} <br>
-  Username: {{user.username}} <br>
-  Password: {{user.password}}
-{{/each}}
+<div class="row center">
+  <h1>Profile Page</h1>
+  <div class="col-md-4">
+    {{#each currentUser.users as |user|}}
+    Name: {{user.name}} <br>
+    Username: {{user.username}} <br>
+    Password: {{user.password}}
+    {{/each}}
+  </div>
+</div>
