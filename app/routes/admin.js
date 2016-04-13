@@ -13,6 +13,15 @@ export default Ember.Route.extend({
     destroyAnimal(animal) {
       animal.destroyRecord(),
       this.transitionTo('admin');
+    },
+    updateAnimal(animal,params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !== undefined) {
+          animal.set(key, params[key]);
+        }
+      });
+      animal.save();
+      this.transitionTo('admin');
     }
   }
 });
