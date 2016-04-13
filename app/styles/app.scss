@@ -6,12 +6,7 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: blackjack;
 
-  src: url('blackjack.otf');
-  src: url('blackjack.otf') format('truetype');
-}
 
 @font-face {
   font-family: blackjack;
@@ -19,6 +14,15 @@
   src: url('blackjack.otf');
   src: url('blackjack.otf') format('truetype');
 }
+
+@font-face {
+  font-family: blackjack;
+
+  src: url('blackjack.otf');
+  src: url('blackjack.otf') format('truetype');
+}
+// variables
+$primary-color: #03396c;
 
 .admin {
   width: 60%;
@@ -108,12 +112,16 @@ a:hover {
   float: right;
 }
 
-#shopping-crate a {
+#shopping-crate {
+  a {
     color: black;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .btn{
+    background-color: transparent;
+  }
 }
-
 .nav-link {
     border:none;
     background-color: inherit;
@@ -144,8 +152,8 @@ video {
     bottom: 42%;
     text-align: center;
     font-size: 100px;
-    color: maroon;
-    text-shadow: 3px 3px 3px black;
+    color: $primary-color;
+    text-shadow: 3px 3px 3px white;
     font-family: blackjack;
   }
 
@@ -156,7 +164,8 @@ video {
     bottom: 35%;
     text-align: center;
     font-size: 30px;
-    text-shadow: 3px 3px 3px white;
+    color: $primary-color;
+    // text-shadow: 3px 3px 3px white;
 
   }
  }
@@ -187,4 +196,51 @@ video {
    background-color: transparent;
    z-index: 2;
    border-color: transparent;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  font-family: blackjack;
+  // padding-bottom: 15px;
+  // font-size: 10px;
+
+  h1 {
+    font-size: 20px;
+    padding-top: 15px;
+    text-shadow: 2px 2px 2px black;
+  }
+  button {
+    padding-top: 5px;
+    // left: 60px;
+    // bottom: 0px;
+    margin-left: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+  }
+}
+
+.footer {
+  a {
+    font-size: 24px;
+    text-shadow: 1px 1px white;
+    margin: 5px;
+    // color: white;
+  }
 }
