@@ -1,10 +1,14 @@
-<div class="row center">
-  <h1>Profile Page</h1>
-  <div class="col-md-4">
+<div id="profile-box" class="row center">
+  <div id="avatar">
     {{#each currentUser.users as |user|}}
-    Name: {{user.name}} <br>
-    Username: {{user.username}} <br>
-    Password: {{user.password}}
+    <img class="block" src="http://www.lovemarks.com/wp-content/uploads/profile-avatars/default-avatar-ponsy-deer.png" alt="avatar" />
+    <div id="plaque">
+      <p>
+        Name: {{user.name}} <br>
+        Username: {{user.username}} <br>
+        Password: {{user.password}}
+      </p>
+    </div>
     {{/each}}
   </div>
 </div>
