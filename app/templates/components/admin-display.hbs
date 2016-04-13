@@ -8,12 +8,88 @@
           <h2>{{animal.name}}</h2>
           <p>Age: {{animal.age}}</p>
           <p>Breed: {{animal.breed}}</p>
-          <button {{action 'delete' animal}}>Remove Animal</button>
+
         <!-- </div> -->
         <!-- <div class"col-sm-3"> -->
           <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
-        <!-- </div>
-      </div>
-    </div> -->
+
+      {{#if updateAnimalForm}}
+        <div>
+          <form class="admin">
+            <div class="form-group">
+              <label for="name">Name</label>
+              {{input value=name placeholder=animal.name}}
+            </div>
+
+            <div class="form-group">
+              <label for="species">Species</label>
+              <select {{action 'chosenSpecies' on="change"}}> value=species}}
+                <option value="null">Select Species</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="monkey">Monkey</option>
+                <option value="snake">Snake</option>
+                <option value="exotic">Exotic</option>
+                <option value="endangered">Endangered</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="breed">Breed</label>
+              {{input value=breed placeholder=animal.breed}}
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              {{#x-select value=gender}}
+                {{#x-option value="null"}}Select Gender{{/x-option}}
+                {{#x-option value="male"}}Male{{/x-option}}
+                {{#x-option value="female"}}Female{{/x-option}}
+              {{/x-select}}
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              {{input type="number" value=age placeholder=animal.age}}
+            </div>
+
+            <div class="form-group">
+              <label for="size">Size</label>
+              {{#x-select value=size}}
+                {{#x-option value="small"}}Small{{/x-option}}
+                {{#x-option value="medium"}}Medium{{/x-option}}
+                {{#x-option value="large"}}Large{{/x-option}}
+              {{/x-select}}
+            </div>
+
+            <div class="form-group">
+              <label for="health">Health</label>
+              {{input value=health placeholder=animal.health}}
+            </div>
+
+            <div class="form-group">
+              <label for="temperment">Temperment</label>
+              {{input value=temperment placeholder=animal.temperment}}
+            </div>
+
+            <div class="form-group">
+              <label for="price">Price</label>
+              {{input type="number" value=price placeholder=animal.price}}
+            </div>
+
+            <div class="form-group">
+              <label for="image">Image URL</label>
+              {{input value=image placeholder=animal.image}}
+            </div>
+
+            <button {{action 'updateAnimal' animal}}>Save</button>
+          </form>
+        </div>
+        {{else}}
+          <button {{action 'updateAnimalForm'}}>Edit Animal</button>
+        {{/if}}
+
+          <button {{action 'delete' animal}}>Remove Animal</button>
+
     <hr>
   {{/each}}
