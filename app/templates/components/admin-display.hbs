@@ -2,18 +2,16 @@
 <h2>Inventory:</h2>
 <hr>
   {{#each animals as |animal|}}
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-sm-3"> -->
-          <h2>{{animal.name}}</h2>
-          <p>Age: {{animal.age}}</p>
-          <p>Breed: {{animal.breed}}</p>
-          <button {{action 'delete' animal}}>Remove Animal</button>
-        <!-- </div> -->
-        <!-- <div class"col-sm-3"> -->
-          <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
-        <!-- </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img id="admin-display" class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
       </div>
-    </div> -->
+      <div class="col-sm-4">
+        <h2>{{animal.name}}</h2>
+        <p>Age: {{animal.age}}</p>
+        <p>Breed: {{animal.breed}}</p>
+        <button {{action 'delete' animal}}>Remove Animal</button>
+      </div>
+    </div>
     <hr>
   {{/each}}
