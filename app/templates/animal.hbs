@@ -1,8 +1,8 @@
 <br>
 <div class="animal_display">
-  <div class="column">
-    <div class="col-sm-4">
-      <div class="about">
+
+
+      <!-- <div class="about"> -->
         <h1 class="page-header">{{model.name}}</h1>
         <h5>Breed: {{model.breed}}</h5>
         <h5>Gender: {{model.gender}}</h5>
@@ -11,23 +11,23 @@
         <p>Health: {{model.health}}</p>
         <p>Temperment: {{model.temperment}}</p>
         <p>Adoption Price: {{model.price}}</p>
-      </div>
-      <div class="smuggle">
+      <!-- </div> -->
+      <!-- <div class="smuggle"> -->
         {{#if model.inCrate }}
           <button class="btn btn-danger"{{action 'removeFromCrate' model}}>Throw Back Critter</button>
         {{else}}
           <button class="btn btn-success"{{action 'addToCrate' model}}>Add to Crate</button>
         {{/if}}
-      </div>
-    </div>
- <div class="animal-image">
-   <div class="col-sm-8">
+      <!-- </div> -->
+
+ <!-- <div class="animal-image"> -->
+
      <img class=""src="{{model.image}}" alt="{{model.breed}}, {{model.gender}}" />
-   </div>
-   <div class="col-lg-8">
+
+
       Shopping Crate
       {{display-crate model="model"}}
-    </div>
-  </div>
-  </div>
+
+  <!-- </div> -->
+
 </div>

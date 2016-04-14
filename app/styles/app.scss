@@ -172,9 +172,17 @@ a:hover {
 }
 
 .animal_display {
+  display: flex;
+  flex-direction: column;
   height: 1000px;
+  margin: auto;
+  align-items: center;
+
   img {
-    max-width: 100%;
+   max-width: 25%;
+   border-radius: 10%;
+   max-height: 35%;
+   margin: 10px;
   }
 }
 
@@ -307,7 +315,6 @@ html {
 .admin-container {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid pink;
   align-self: center;
   justify-content: space-around;
 
@@ -499,6 +506,7 @@ h1 {
 }
 
 .flex-boxes {
+  margin-bottom: 100px;
   $base-border-radius: 3px !default;
   $base-background-color: white !default;
   $dark-gray: #333 !default;
@@ -572,6 +580,21 @@ h1 {
 
   .flex-box-big {
     @include flex(1 1 40em);
+  }
+}
+
+.SignUpForm {
+  border: 2px solid black;
+  height: 800px;
+  form {
+    margin-top: 200px;
+    margin-left: 60px;
+    display: block;
+    // margin: 0 auto;
+
+  }
+  input {
+    width: 60%;
   }
 }
 
