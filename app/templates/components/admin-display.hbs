@@ -12,14 +12,14 @@
           <p>Age: {{animal.age}}</p>
           <p>Breed: {{animal.breed}}</p>
           <p>Size: {{animal.size}}</p>
-          {{update-animal animal=animal updateAnimal="updateAnimal"}}
-          <button class= "animal-btn" {{action 'delete' animal}}>Remove Animal</button>
         <!-- </div> -->
         <!-- <div class"col-sm-3"> -->
         <div class="image-admin">
           <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
 
         </div>
+        {{update-animal animal=animal updateAnimal="updateAnimal"}}
+        <button class= "animal-btn" {{action 'delete' animal}}>Remove Animal</button>
         <!-- </div>
       </div>
     </div> -->

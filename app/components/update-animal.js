@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     showAnimalForm(animal) {
       this.set('updateAnimalForm', true);
     },
+    hideAnimalForm(animal) {
+      this.set('updateAnimalForm', false);
+    },
 
     chosenSpecies() {
       this.set('chosenSpecies', event.target.value);
