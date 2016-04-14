@@ -4,11 +4,14 @@
         <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
         <h2>{{animal.name}}</h2><h4>{{animal.breed}}</h4>
 
-        <h5>
-          {{animal.gender}}<br>
-          {{animal.age}} Years Old<br>
-          ${{animal.price}}
-        </h5>
 
     </div>
-</div>
+
+    <div class="col-sm-5">
+      <h5>
+        {{animal.gender}}<br>
+        {{animal.age}} {{calcYears animal}} Old<br>
+        ${{animal.price}}
+      </h5>
+    </div>
+  </div>
