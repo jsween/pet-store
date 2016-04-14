@@ -4,7 +4,12 @@
     {{add-animal saveAnimalToStore="saveAnimalToStore"}}
     </div>
     <div class="col-sm-6">
-    {{admin-display animals=model destroyAnimal='destroyAnimal' updateAnimal='updateAnimal'}}
+      <h2 class="center">Inventory:</h2>
+      <hr>
+      {{#each model as |animal|}}
+      {{admin-display animal=animal destroyAnimal='destroyAnimal' updateAnimal="updateAnimal"}}
+      {{/each}}
     </div>
   </div>
+
 </div>
