@@ -584,7 +584,6 @@ h1 {
 }
 
 .SignUpForm {
-  border: 2px solid black;
   height: 800px;
   form {
     margin-top: 200px;
@@ -596,6 +595,32 @@ h1 {
   input {
     width: 60%;
   }
+  button {
+    width: 200px;
+    background-color: $primary-color;
+    color: white;
+  }
+  img {
+    width: 60%;
+  }
+}
+
+.log-in {
+ background-color: $primary-color;
+ box-shadow: 6px 6px gray;
+ color: white;
+ height: 800px;
+ margin-left: 200px;
+ form {
+  margin-top: 100px;
+}
+button {
+  background-color: gray;
+  border: 1px solid white;
+}
+input {
+  box-shadow: 4px 4px 4px gray;
+}
 }
 
 @media screen and (max-width: 640px) {
