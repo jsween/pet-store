@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export function calcYears(params) {
   var animal = params[0];
-  debugger;
+  // debugger;
   if(animal.get('age') != 1) {
     return 'Years';
   }

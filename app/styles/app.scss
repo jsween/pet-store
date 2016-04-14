@@ -157,18 +157,12 @@ a:hover {
 }
 
 .all_animals {
-  max-width: 40%;
-  max-height: 60%;
-  margin: auto;
-  margin-bottom: 30px;
-  border: 2px solid black;
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction:column;
-  // align-items: center;
-  // justify-content: center;
-  // border: 2px solid green;
+  margin: 20px;
+  width: 100%;
+  // margin-right: 10px;
+  // margin-bottom: 30px;
 }
+
 .contain-here {
   height: 1000px;
   width: 800px;
@@ -464,15 +458,15 @@ h1 {
 }
 
 .eat-it {
+  // height: 800vh;
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
   img {
-    width: 60vw;
+    width: 20vw;
     height: 30vh;
     border-radius: 20%;
     border: 4px solid $primary-color;
-  }
-  .eat-species {
-    justify-content: flex-start;
   }
 }
 
@@ -486,7 +480,6 @@ h1 {
 
 
 .eat-species {
-  border: 2px solid purple;
   display: flex;
   flex-wrap: wrap;
   // justify-content: center;
