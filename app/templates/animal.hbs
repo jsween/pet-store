@@ -1,7 +1,7 @@
 <br>
 <div class="animal_display">
-  <div class="row">
-    <div class="col-sm-6">
+  <div class="column">
+    <div class="col-sm-4">
       <div class="about">
         <h1 class="page-header">{{model.name}}</h1>
         <h5>Breed: {{model.breed}}</h5>
@@ -20,14 +20,14 @@
         {{/if}}
       </div>
     </div>
-
-    <div class="col-sm-6">
-      <img class=""src="{{model.image}}" alt="{{model.breed}}, {{model.gender}}" />
-    </div>
-
-    <div class="col-lg-8">
+ <div class="animal-image">
+   <div class="col-sm-8">
+     <img class=""src="{{model.image}}" alt="{{model.breed}}, {{model.gender}}" />
+   </div>
+   <div class="col-lg-8">
       Shopping Crate
       {{display-crate model="model"}}
     </div>
+  </div>
   </div>
 </div>
