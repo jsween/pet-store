@@ -9,7 +9,7 @@ export default Ember.Component.extend({
         species: this.get('species') ? this.get('species') : "",
         gender: this.get('gender') ? this.get('gender') : "",
         age: this.get('age') ? this.get('age') : "",
-        size: this.get('size') ? this.get('size') : "",
+        size: this.get('size') ? this.get('size') : "small",
         health: this.get('health') ? this.get('health') : "",
         temperment: this.get('temperment') ? this.get('temperment') : "",
         price: this.get('price') ? this.get('price') : "",
