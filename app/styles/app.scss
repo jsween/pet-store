@@ -73,6 +73,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 #logo {
   font-size: 2.2em;
   font-weight: bold;
@@ -312,22 +313,18 @@ html {
 }
 // admin-display.hbs
 
-.admin-container {
-  display: flex;
+.adminContainer {
+  display: flex !important;
   flex-wrap: wrap;
-  align-self: center;
-  justify-content: space-around;
-
+  // align-self: center;
+  // justify-content: space-around;
 }
 
   .box-it {
-
-    width: 32.9%;
-    align-items: center;
-
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
+    width: 32%;
 
     .animal-btn {
     margin-bottom: 10px;
@@ -337,6 +334,7 @@ html {
     color: $background-color;
     }
   }
+
 .animal-pic {
   border-radius: 30%;
   width: 300px;
@@ -465,7 +463,6 @@ h1 {
 }
 
 .eat-it {
-  // height: 800vh;
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -606,6 +603,7 @@ h1 {
 }
 
 .log-in {
+ position: relative;
  background-color: $primary-color;
  box-shadow: 6px 6px gray;
  color: white;
@@ -620,6 +618,11 @@ button {
 }
 input {
   box-shadow: 4px 4px 4px gray;
+}
+img {
+  position: absolute;
+  top: 300px;
+  left: 500px;
 }
 }
 
