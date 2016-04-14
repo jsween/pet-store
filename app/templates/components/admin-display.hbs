@@ -1,10 +1,9 @@
 
-<h2 class="center">Inventory:</h2>
-<hr>
+
 
 <div class="admin-container">
 
-  {{#each animals as |animal|}}
+
     <!-- <div class="container">
       <div class="row">
         <div class="col-sm-3"> -->
@@ -13,98 +12,19 @@
           <p>Age: {{animal.age}}</p>
           <p>Breed: {{animal.breed}}</p>
           <p>Size: {{animal.size}}</p>
-
-      {{#if updateAnimalForm}}
-        <div>
-          <form class="admin">
-            <div class="form-group">
-              <label for="name">Name</label>
-              {{input value=name placeholder=animal.name}}
-            </div>
-
-            <div class="form-group">
-              <label for="species">Species</label>
-              <select {{action 'chosenSpecies' on="change"}}> value=species}}
-                <option value="null">{{animal.species}}</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="monkey">Monkey</option>
-                <option value="snake">Snake</option>
-                <option value="exotic">Exotic</option>
-                <option value="endangered">Endangered</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="breed">Breed</label>
-              {{input value=breed placeholder=animal.breed}}
-            </div>
-
-            <div class="form-group">
-              <label for="gender">Gender</label>
-              <select value=gender {{action 'chosenGender' on="change"}}>
-                <option value="null">{{animal.gender}}</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="age">Age</label>
-              {{input value=age type="number" placeholder=animal.age}}
-            </div>
-
-            <div class="form-group">
-              <label for="size">Size</label>
-              <select value=size {{action 'chosenSize' on="change"}}>
-                <option value="null">{{animal.size}}</option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="health">Health</label>
-              {{input value=health placeholder=animal.health}}
-            </div>
-
-            <div class="form-group">
-              <label for="temperment">Temperment</label>
-              {{input value=temperment placeholder=animal.temperment}}
-            </div>
-
-            <div class="form-group">
-              <label for="price">Price</label>
-              {{input type="number" value=price placeholder=animal.price}}
-            </div>
-
-            <div class="form-group">
-              <label for="image">Image URL</label>
-              {{input value=image placeholder=animal.image}}
-            </div>
-
-            <button {{action 'updateAnimal' animal}}>Save</button>
-          </form>
-        </div>
-        {{else}}
-          <button {{action 'updateAnimalForm'}}>Edit Animal</button>
-        {{/if}}
-
-
-          <button class= "animal-btn" {{action 'delete' animal}}>Remove Animal</button>
         <!-- </div> -->
         <!-- <div class"col-sm-3"> -->
         <div class="image-admin">
           <img class="img-responsive" src="{{animal.image}}" alt="{{animal.breed}}, {{animal.species}}" />
 
         </div>
+        {{update-animal animal=animal updateAnimal="updateAnimal"}}
+        <button class= "animal-btn" {{action 'delete' animal}}>Remove Animal</button>
         <!-- </div>
       </div>
     </div> -->
 
     <hr>
   </div>
-  {{/each}}
 
 </div>
