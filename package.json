@@ -44,6 +44,7 @@
     "ember-new-computed": "1.0.3",
     "ember-radio-button": "1.0.7",
     "ember-resolver": "^2.0.3",
+    "ember-scroll-to": "0.5.1",
     "emberfire": "1.6.6",
     "emberx-select": "2.1.1",
     "loader.js": "^4.0.1"
